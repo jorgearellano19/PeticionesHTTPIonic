@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Peliculas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let item of celulares">
+      <h2 color="secundary">{{item.nombre}}</h2>
+      <h3>{{item.marca}}</h3>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab bottom right>
+      <button ion-fab  (click)="openAlertInput()" >
+        <ion-icon name="add"></ion-icon>
+      </button>
+  </ion-fab>
